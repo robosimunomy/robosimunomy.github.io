@@ -48,16 +48,16 @@
 <h3>2.2 Information processed on your device only</h3>
 <table>
 <tr><th>Data</th><th>What happens to it</th></tr>
-<tr><td>Photos you take or choose from your gallery</td><td>Analysed locally by the AI model to produce a result. Photos taken inside the App may be saved as temporary files in the App's own private storage folder. They are not uploaded anywhere, and they are removed when you clear the App's storage or uninstall the App.</td></tr>
+<tr><td>Photos you take or choose from your gallery</td><td>Analysed locally by the AI model to produce a result. Photos taken with the camera button are saved as temporary files in the App's own private storage folder. They are not uploaded anywhere, and they are removed when you clear the App's storage or uninstall the App.</td></tr>
 <tr><td>Live camera frames (Live Detection)</td><td>Processed in real time in memory to draw detection boxes. Frames are not recorded or saved unless you capture a photo.</td></tr>
 <tr><td>Your last prediction (plant name, result, confidence %)</td><td>Saved in the App's private storage so the "Last Prediction" card can show it. It stays on your device and is removed when you clear App data or uninstall.</td></tr>
 </table>
 
 <h3>2.3 Device backup</h3>
-<p>Android's automatic backup feature may include the App's small local settings (such as the last prediction) in your own Google account backup, depending on your phone settings. This is controlled by your device and Google, not by us. You can turn it off in your phone settings.</p>
+<p>The App turns off Android app backup, so its local data is not included in cloud backups of your phone.</p>
 
 <h2>3. Permissions Used and Why</h2>
-<p>The App asks for permissions only when you use a feature that needs them. You can deny or withdraw any permission in <em>Phone Settings → Apps → VisionNest AI → Permissions</em>. If you deny a permission, only the related feature stops working.</p>
+<p>The App asks for only <strong>one</strong> permission (Camera), and only when you use a feature that needs it. You can deny or withdraw any permission in <em>Phone Settings → Apps → VisionNest AI → Permissions</em>. If you deny it, only the related feature stops working.</p>
 <table>
 <tr><th>Permission</th><th>Purpose in the App</th><th>When it is asked</th><th>If you deny it</th></tr>
 <tr>
@@ -66,22 +66,13 @@
   <td>When you tap the Camera button, or open a Live Detection model.</td>
   <td>You cannot take photos or use Live Detection. You can still analyse images from your gallery.</td>
 </tr>
-<tr>
-  <td><strong>Photos / Storage (read)</strong><br><code>READ_EXTERNAL_STORAGE</code> (Android 12 and below)<br><code>READ_MEDIA_IMAGES</code> (Android 13 and above, if present in your version)</td>
-  <td>To let you pick an existing picture from your gallery and analyse it. The App only reads the image you choose to analyse.</td>
-  <td>When you tap the Gallery button.</td>
-  <td>You cannot choose gallery images. You can still use the camera.</td>
-</tr>
-<tr>
-  <td><strong>Storage (write)</strong><br><code>WRITE_EXTERNAL_STORAGE</code> (Android 9 and below only)</td>
-  <td>Only for saving the temporary photo you take inside the App on older Android versions. On newer versions this permission is not used.</td>
-  <td>Only on Android 9 or older, when you take a photo.</td>
-  <td>Photo capture may not work on those older devices.</td>
-</tr>
 </table>
 
+<h3>Choosing images from your gallery</h3>
+<p>The App does not request storage, photos, or media permission. When you tap Gallery, Android's built-in picker opens and the App receives <em>only the single image you select</em>. It cannot browse or read the rest of your photos or files.</p>
+
 <h3>Permissions the App does NOT use</h3>
-<p>The App does not access your location, microphone, contacts, call logs, SMS, calendar, files outside of what you select, or the Internet. It does not run in the background to collect data.</p>
+<p>The App does not access your location, microphone, contacts, call logs, SMS, calendar, your photo library as a whole, storage, or the Internet. It does not run in the background to collect data.</p>
 
 <h3>Text-to-speech</h3>
 <p>The App may read results aloud using the text-to-speech engine already installed on your phone (for example, Google Text-to-Speech). This needs no extra permission. The engine is part of your device and is governed by its own provider's privacy policy.</p>
