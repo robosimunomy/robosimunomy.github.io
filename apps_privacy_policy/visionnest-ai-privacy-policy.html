@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VisionNest AI – Privacy Policy &amp; Disclaimer</title>
+<style>
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.65;color:#222;max-width:820px;margin:0 auto;padding:24px 18px 60px;background:#fff}
+  h1{color:#E84E0F;margin-bottom:4px}
+  h2{margin-top:34px;border-bottom:2px solid #f0e2db;padding-bottom:6px;color:#333}
+  h3{margin-top:22px}
+  table{border-collapse:collapse;width:100%;margin:14px 0;font-size:.95rem}
+  th,td{border:1px solid #ddd;padding:9px 10px;text-align:left;vertical-align:top}
+  th{background:#fdf1ec}
+  .box{background:#fff7f3;border-left:5px solid #E84E0F;padding:12px 16px;margin:18px 0;border-radius:4px}
+  .warn{background:#fff4f4;border-left:5px solid #c62828}
+  .meta{color:#666;font-size:.92rem}
+  @media (prefers-color-scheme:dark){
+    body{background:#121212;color:#e6e6e6} h2{color:#eee;border-color:#3a2a24}
+    th{background:#2a1d18} th,td{border-color:#444} .box{background:#241914} .warn{background:#2a1717} .meta{color:#aaa}
+  }
+</style>
+</head>
+<body>
+
+<h1>VisionNest AI – Privacy Policy &amp; Disclaimer</h1>
+<p class="meta">Developer: RoboSimunomy &nbsp;|&nbsp; Effective date: October 3, 2026 &nbsp;|&nbsp; Last updated: October 3, 2026</p>
+
+<p>This Privacy Policy explains how the <strong>VisionNest AI</strong> Android app ("the App", "we", "us") handles information, which device permissions it asks for and why, and the important limitations of its AI results. By installing or using the App you agree to this policy. If you do not agree, please do not use the App.</p>
+
+<div class="box">
+<strong>Short summary</strong>
+<ul>
+  <li>The App works <strong>offline</strong>. It does not request the Internet permission and does <strong>not upload</strong> your photos, camera frames, or results to us or to anyone else.</li>
+  <li>We do <strong>not</strong> require an account, and we do <strong>not</strong> collect your name, phone number, location, contacts, or advertising ID.</li>
+  <li>Camera and photo access are used <strong>only</strong> to run the AI model on your device, when you ask for it.</li>
+  <li>The AI results can be <strong>wrong</strong>. They are <strong>not</strong> professional advice. Always confirm with a qualified specialist before taking action. See Section 8.</li>
+</ul>
+</div>
+
+<h2>1. About the App</h2>
+<p>VisionNest AI is an educational and informational tool that uses on-device artificial-intelligence models (TensorFlow Lite) to analyse images. It includes plant leaf disease detection for several crops and garden plants, additional image-classification tools, live camera object detection using YOLO-family and EfficientNet models, text and voice read-out of results, and general care tips for some results.</p>
+
+<h2>2. Information We Collect</h2>
+<h3>2.1 Information we do NOT collect</h3>
+<p>We do not collect, store on our servers, sell, rent, or share any personal information. The App has no sign-up, no login, no analytics or advertising SDKs, and no server that receives your data. The App does not request the Internet permission, so it cannot send your images or results out of your device.</p>
+
+<h3>2.2 Information processed on your device only</h3>
+<table>
+<tr><th>Data</th><th>What happens to it</th></tr>
+<tr><td>Photos you take or choose from your gallery</td><td>Analysed locally by the AI model to produce a result. Photos taken inside the App may be saved as temporary files in the App's own private storage folder. They are not uploaded anywhere, and they are removed when you clear the App's storage or uninstall the App.</td></tr>
+<tr><td>Live camera frames (Live Detection)</td><td>Processed in real time in memory to draw detection boxes. Frames are not recorded or saved unless you capture a photo.</td></tr>
+<tr><td>Your last prediction (plant name, result, confidence %)</td><td>Saved in the App's private storage so the "Last Prediction" card can show it. It stays on your device and is removed when you clear App data or uninstall.</td></tr>
+</table>
+
+<h3>2.3 Device backup</h3>
+<p>Android's automatic backup feature may include the App's small local settings (such as the last prediction) in your own Google account backup, depending on your phone settings. This is controlled by your device and Google, not by us. You can turn it off in your phone settings.</p>
+
+<h2>3. Permissions Used and Why</h2>
+<p>The App asks for permissions only when you use a feature that needs them. You can deny or withdraw any permission in <em>Phone Settings → Apps → VisionNest AI → Permissions</em>. If you deny a permission, only the related feature stops working.</p>
+<table>
+<tr><th>Permission</th><th>Purpose in the App</th><th>When it is asked</th><th>If you deny it</th></tr>
+<tr>
+  <td><strong>Camera</strong><br><code>CAMERA</code></td>
+  <td>To take a photo of a leaf/object for analysis, and to show the live camera preview for real-time detection (YOLO / EfficientNet).</td>
+  <td>When you tap the Camera button, or open a Live Detection model.</td>
+  <td>You cannot take photos or use Live Detection. You can still analyse images from your gallery.</td>
+</tr>
+<tr>
+  <td><strong>Photos / Storage (read)</strong><br><code>READ_EXTERNAL_STORAGE</code> (Android 12 and below)<br><code>READ_MEDIA_IMAGES</code> (Android 13 and above, if present in your version)</td>
+  <td>To let you pick an existing picture from your gallery and analyse it. The App only reads the image you choose to analyse.</td>
+  <td>When you tap the Gallery button.</td>
+  <td>You cannot choose gallery images. You can still use the camera.</td>
+</tr>
+<tr>
+  <td><strong>Storage (write)</strong><br><code>WRITE_EXTERNAL_STORAGE</code> (Android 9 and below only)</td>
+  <td>Only for saving the temporary photo you take inside the App on older Android versions. On newer versions this permission is not used.</td>
+  <td>Only on Android 9 or older, when you take a photo.</td>
+  <td>Photo capture may not work on those older devices.</td>
+</tr>
+</table>
+
+<h3>Permissions the App does NOT use</h3>
+<p>The App does not access your location, microphone, contacts, call logs, SMS, calendar, files outside of what you select, or the Internet. It does not run in the background to collect data.</p>
+
+<h3>Text-to-speech</h3>
+<p>The App may read results aloud using the text-to-speech engine already installed on your phone (for example, Google Text-to-Speech). This needs no extra permission. The engine is part of your device and is governed by its own provider's privacy policy.</p>
+
+<h2>4. How We Use Information</h2>
+<p>Images and results are used only to (a) run the AI analysis you requested, (b) show you the result and the related care tips, and (c) show your last prediction on the home screen. They are not used for advertising, profiling, model training, or any other purpose.</p>
+
+<h2>5. Sharing and Third Parties</h2>
+<p>We do not share your data with anyone, because we do not receive it. The App contains no advertising networks, no analytics, and no crash-reporting services. If this changes in a future version, we will update this policy before releasing the change, and the Google Play Data safety section will be updated as well.</p>
+
+<h2>6. Data Retention and Deletion</h2>
+<p>All data stays on your device. To delete it, open <em>Phone Settings → Apps → VisionNest AI → Storage → Clear data</em>, or uninstall the App. Since we hold no copy, we have no data to delete on our side. Pictures in your own gallery are not removed by the App.</p>
+
+<h2>7. Children's Privacy</h2>
+<p>The App is intended for general audiences, including farmers, gardeners, students, and hobbyists. We do not knowingly collect personal information from anyone, including children under 13. Because the App collects nothing, no child's data is collected. Children should use the App with a parent or guardian.</p>
+
+<h2>8. Accuracy, Limitations, and Important Disclaimer</h2>
+<div class="box warn">
+<strong>Please read carefully.</strong> The AI results in VisionNest AI are estimates. They are <strong>not 100% accurate</strong> and can be incorrect, incomplete, or misleading.
+</div>
+
+<ol>
+  <li><strong>Not 100% accurate.</strong> The models are trained on limited sets of images. They can miss a problem (false negative), report a problem that does not exist (false positive), or choose the wrong class. A high confidence percentage does <em>not</em> guarantee the result is correct.</li>
+  <li><strong>Not professional advice.</strong> Results, confidence scores, and care tips are for general information and education only. They are not a substitute for the judgement of an agronomist, agriculture officer, plant pathologist, veterinarian, doctor, engineer, disaster-management authority, or other qualified specialist.</li>
+  <li><strong>Consult a specialist before acting.</strong> Before you apply any pesticide, fungicide, fertiliser, or other treatment, remove or destroy plants or crops, make a purchase, or take any decision based on the App, you must consult a qualified local specialist. Following the App alone may not work and may cause crop loss, plant damage, financial loss, or other harm.</li>
+  <li><strong>Chemicals and safety.</strong> The App does not recommend specific chemical products or doses. Always follow the product label and local regulations, and wear proper protection.</li>
+  <li><strong>Many things affect results.</strong> Poor or uneven light, blur, shadows, dirty lens, distance, cluttered background, multiple leaves in one frame, unusual leaf angle, plants or diseases the model was not trained on, early-stage or mixed infections, nutrient deficiency or pest damage that looks like disease, and low-end phone performance can all reduce accuracy.</li>
+  <li><strong>Limited coverage.</strong> The App supports only the plants and classes included in each model. A disease or object that is not in the model will be wrongly matched to the closest known class or not detected at all.</li>
+  <li><strong>Live detection.</strong> Real-time object detection (YOLO / EfficientNet models) is approximate. Boxes and labels may be missing, wrong, or flicker, and speed depends on your device. Do not use it for safety-critical, security, navigation, or emergency decisions.</li>
+  <li><strong>Health-related and other classification tools.</strong> Any tool that analyses body-related or other non-plant images is for general demonstration and learning only. It is <strong>not a medical device</strong>, does not diagnose, treat, or prevent any condition, and must not replace a doctor's advice. If you have a health concern, see a qualified medical professional.</li>
+  <li><strong>Disaster, colour, and similar tools.</strong> These are informational and can be wrong. Never rely on them for emergency, evacuation, or safety decisions. Follow official authorities.</li>
+  <li><strong>Care tips.</strong> General tips shown after a result are generic and not tailored to your soil, climate, crop stage, or local rules.</li>
+  <li><strong>Voice read-out.</strong> The text-to-speech output depends on your phone's speech engine and language support and may be mispronounced or unavailable.</li>
+  <li><strong>Availability.</strong> The App is provided without a guarantee of uninterrupted or error-free operation. Features and models may change, and some may not work on every device or Android version.</li>
+</ol>
+
+<h2>9. No Warranty and Limitation of Liability</h2>
+<p>The App is provided <strong>"as is" and "as available"</strong>, without warranties of any kind, express or implied, including accuracy, reliability, fitness for a particular purpose, and non-infringement. To the maximum extent allowed by law, RoboSimunomy and its developers are not liable for any direct, indirect, incidental, or consequential loss or damage (including crop loss, plant loss, financial loss, or health or safety consequences) arising from the use of, or inability to use, the App or from relying on its results. You use the App and its results at your own risk and responsibility.</p>
+
+<h2>10. Your Responsibilities</h2>
+<ul>
+  <li>Only photograph plants, objects, or scenes you are allowed to photograph, and respect other people's privacy. Do not point the camera at people without their consent.</li>
+  <li>Do not use the App for unlawful purposes or to harm others.</li>
+</ul>
+
+<h2>11. Security</h2>
+<p>Because processing happens on your device and no data is sent to a server, your images stay under your control. Please keep your phone secure (screen lock, updates) to protect the images and data stored on it.</p>
+
+<h2>12. Your Rights</h2>
+<p>Since we do not collect or hold your personal data, there is no personal data for us to access, correct, export, or delete. You control everything stored by the App through your phone's settings (permissions, clear data, uninstall). If you have a privacy question, contact us using the details below.</p>
+
+<h2>13. Changes to This Policy</h2>
+<p>We may update this policy from time to time, for example if we add new features. The "Last updated" date at the top shows the latest version. Continued use of the App after an update means you accept the updated policy. Where required, we will notify you in the App or on the Google Play listing.</p>
+
+<h2>14. Governing Law</h2>
+<p>This policy is governed by the laws of Bangladesh, without regard to conflict-of-law rules, unless your local consumer-protection law requires otherwise.</p>
+
+<h2>15. Contact Us</h2>
+<p>
+Developer: <strong>RoboSimunomy</strong><br>
+Email: <a href="mailto:abubakkar.emon11@gmail.com">abubakkar.emon11@gmail.com</a><br>
+Website: <a href="https://robosimunomy.github.io">robosimunomy.github.io</a>
+</p>
+<p>We aim to reply to privacy and support requests within a reasonable time.</p>
+
+</body>
+</html>
