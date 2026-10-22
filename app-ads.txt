@@ -1,5 +1,7 @@
 google.com, pub-4342224983673116, DIRECT, f08c47fec0942fa0
 
+facebook.com, 1889093302211327, DIRECT, c3e20eee3f780d68
+
 appnexus.com, 17779, RESELLER
 pubnative.net, 1009458, RESELLER, d641df8625486a7b
 xandr.com, 7353, RESELLER
